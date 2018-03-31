@@ -127,12 +127,12 @@ class Points {
     }
 
     scoreUp() {
-        this.score++;
+        this.score += 100;
         this.points.textContent = this.score;
     }
 
     scoreDown() {
-        this.score--;
+        this.score -= 50;
         this.score <= 0 ? this.score = 0 : this.score;
         this.points.textContent = this.score;
     }
