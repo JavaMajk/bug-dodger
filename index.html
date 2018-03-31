@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
+    <title>Bug Dodger</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <h1>Bug Dodger</h1>
+
+    <div class="score-board">
+        <div class="score">SCORE:</div>
+        <div class="points">0</div>
+        <ul class="stars">
+            <li><i class="fas fa-heart" id="heartOne"></i></li>
+            <li><i class="fas fa-heart" id="heartTwo"></i></li>
+            <li><i class="heart-three fas fa-heart" id="heartThree"></i></li>
+        </ul>
+        <div class="music">
+                <i class="speaker fas fa-volume-up" onclick="musicOn()"></i>
+        </div>
+    </div>
+
+    <div class="welcome">
+        <!-- Modal content -->
+        <div class="welcome-content">
+                <p>Welcome to<br> <em>Bug Dodger!</em></p>
+                <p>Use the arrow keys on you keyboard to cross to the other side of the stone path as many times as you can, without colliding with the bugs.<br><br>You got two minutes!</p>
+            <div class="start" onclick="hideWelcome()">
+                Start Game
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+                <p>You earned&nbsp;<em class="total"> </em>&nbsp;points!</p>
+                <p>You earned a<span class="rating"> </span> rating.</p>
+            <div class="restart" onclick="restart()">
+                Replay Game
+            </div>
+        </div>
+    </div>
+
+    <audio class="blop" src="audio/blop.wav"></audio>
+    <audio class="punch" src="audio/punch.wav"></audio>
+    <audio class="mario" src="audio/mario.wav"></audio>
+    <audio class="arcade-music" src="audio/arcade-music.wav"></audio>
+
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 </body>
 </html>
