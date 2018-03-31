@@ -15,26 +15,28 @@ em {
     background: linear-gradient(345deg, rgba(79, 103, 211, 0.604) 0%, rgba(75, 152, 92, 0.541) 100%);
     border-radius: 8px;
     width: 740px;
-    height: 60px;
+    height: 100%;
     margin: 2rem auto 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
+    transform: all 1s;
     }
 
 .score, .points {
     padding: 1rem;
 }
 
-.stars {
+.hearts {
     display: inline-block;
-    margin: 0 0 0 80px;
+    margin: 0 0 0 -50px;
     font-size: 28px;
     text-align: center;
+    flex: 2;
 }
 
-.stars li {
+.hearts li {
     list-style: none;
     display: inline-block;
     color: rgb(199, 0, 0);
@@ -50,6 +52,7 @@ em {
 
 .speaker {
     cursor: pointer;
+    flex: 1;
 }
 
 .red-speaker {
@@ -81,7 +84,7 @@ em {
     position: relative;
     background: rgb(9,9,121);
     background: linear-gradient(345deg, rgba(58, 76, 156, 0.865) 0%, rgb(48, 99, 59) 100%);
-    margin: 230px auto;
+    margin: 220px auto;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 8px 12px 12px 24px rgba(0, 0, 0, 0.303);
@@ -101,7 +104,7 @@ em {
 
 .welcome .welcome-content .start {
     cursor: pointer;
-    padding: 12px;
+    padding: 24px;
     border-radius: 6px;
     background-color: rgba(52, 126, 52, 0.899);
 }
@@ -122,7 +125,7 @@ em {
     position: relative;
     background: rgb(9,9,121);
     background: linear-gradient(345deg, rgba(58, 76, 156, 0.865) 0%, rgb(48, 99, 59) 100%);
-    margin: 230px auto;
+    margin: 205px auto;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 2px 9px 12px 24px rgba(0, 0, 0, 0.303);
@@ -141,7 +144,7 @@ em {
 }
 
 .modal .modal-content .restart {
-    padding: 12px;
+    padding: 24px;
     border-radius: 6px;
     background-color: rgba(126, 52, 52, 0.899);
     color: #d7d7d7;

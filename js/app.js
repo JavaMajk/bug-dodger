@@ -72,10 +72,16 @@ class Player {
             }, 90);
         }
         if (this.lives == 2) {
-
+            document.querySelector("#heartThree").classList.remove("fas");
+            document.querySelector("#heartThree").classList.add("far");
+        }
+        if (this.lives == 1) {
+            document.querySelector("#heartTwo").classList.remove("fas");
+            document.querySelector("#heartTwo").classList.add("far");
         }
         if (this.lives == 0) {
-            // $("#heartOne").removeClass("fas fa-heart").addClass("far fa-heart");
+            document.querySelector("#heartOne").classList.remove("fas");
+            document.querySelector("#heartOne").classList.add("far");
             finito();
             restartKeys = [32];
         }
