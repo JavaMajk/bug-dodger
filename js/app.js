@@ -71,6 +71,9 @@ class Player {
                 document.body.classList.remove("red-flash");
             }, 90);
         }
+        if (this.lives == 2) {
+
+        }
         if (this.lives == 0) {
             // $("#heartOne").removeClass("fas fa-heart").addClass("far fa-heart");
             finito();
