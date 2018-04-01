@@ -3,11 +3,16 @@ body {
     background-color: rgb(36, 41, 52);
     font-family: 'Press Start 2P', cursive;
     color: #dadad0;
-    transition: all 0.5s;
+    transition: all 0.39s;
+    visibility: show;
 }
 
 em {
     font-size: 36px;
+}
+
+.title {
+    padding-top: 20px;
 }
 
 .score-board {
@@ -15,44 +20,44 @@ em {
     background: linear-gradient(345deg, rgba(79, 103, 211, 0.604) 0%, rgba(75, 152, 92, 0.541) 100%);
     border-radius: 8px;
     width: 740px;
-    height: 100%;
+    height: 60px;
     margin: 2rem auto 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     transform: all 1s;
     }
 
 .score, .points {
-    padding: 1rem;
+    margin-left: 1em;
 }
 
 .hearts {
     display: inline-block;
-    margin: 0 0 0 -50px;
+    position: fixed;
+    margin: 0 0 0 540px;
     font-size: 28px;
-    text-align: center;
-    flex: 2;
 }
 
-.hearts li {
+.hearts {
     list-style: none;
     display: inline-block;
     color: rgb(199, 0, 0);
 }
 
 .music {
-    flex: 1;
-    text-align: right;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
-    font-size: 24px;
+    border-radius: 6px;
+    background: rgba(47, 79, 79, 0.571);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 
 .speaker {
     cursor: pointer;
-    flex: 1;
+    padding: 0.5em;
+    font-size: 1.5em;
 }
 
 .red-speaker {
@@ -75,7 +80,7 @@ em {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    /* overflow: auto; */
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.639);
 }

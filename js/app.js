@@ -65,7 +65,7 @@ class Player {
             this.lives--;
             points.scoreDown();
             punch.play();
-            restartKeys = [32];
+            
             document.body.classList.add("red-flash");
             setTimeout(function () {
                 document.body.classList.remove("red-flash");
@@ -166,9 +166,9 @@ const hideWelcome = () => {
     welcome.style.display = "none";
     audio.currentTime = 0;
     audio.play();
-    // setTimeout(() => {
-    //     //STOP GAME
-    // }, 5000);
+    setTimeout(() => {
+        finito();
+    }, 120000);
 }
 
 let allowedStartKeys = [13];
@@ -189,9 +189,30 @@ const finito = () => {
         document.querySelector(".total").textContent = points.score;
         // stop();
     }, 200);
+    restartKeys = [32];
 }
 
 const restart = () => {
-    window.location.reload(false);
-    allowedStartKeys = [13];
+    player.lives = 3;
+    points.score = 0;
+    setTimeout(() => {
+        document.querySelector(".modal").style.display = 'none';
+        document.querySelector(".points").textContent = points.score;
+        document.querySelector("#heartOne").classList.remove("far");
+        document.querySelector("#heartOne").classList.add("fas");
+        document.querySelector("#heartTwo").classList.remove("far");
+        document.querySelector("#heartTwo").classList.add("fas");
+        document.querySelector("#heartThree").classList.remove("far");
+        document.querySelector("#heartThree").classList.add("fas");
+        // stop();
+    }, 200);
+    allowedKeys.set(37, 'left');
+    allowedKeys.set(38, 'up');
+    allowedKeys.set(39, 'right');
+    allowedKeys.set(40, 'down');
+    audio.currentTime = 0;
+    audio.play();
+    setTimeout(() => {
+        finito();
+    }, 120000);
 }
