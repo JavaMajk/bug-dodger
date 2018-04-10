@@ -33,10 +33,15 @@ em {
     margin-left: 1em;
 }
 
+.timer {
+    position: fixed;
+    margin-left: 280px;
+}
+
 .hearts {
     display: inline-block;
     position: fixed;
-    margin: 0 0 0 540px;
+    margin: 0 0 0 580px;
     font-size: 28px;
 }
 
@@ -44,6 +49,15 @@ em {
     list-style: none;
     display: inline-block;
     color: rgb(199, 0, 0);
+}
+
+.keys {
+    font-size: 12px;
+    border-radius: 6px;
+    background: rgba(47, 79, 79, 0.571);
+    position: fixed;
+    bottom: 35px;
+    left: 20px; 
 }
 
 .music {
@@ -130,7 +144,7 @@ em {
     position: relative;
     background: rgb(9,9,121);
     background: linear-gradient(345deg, rgba(58, 76, 156, 0.865) 0%, rgb(48, 99, 59) 100%);
-    margin: 205px auto;
+    margin: 210px auto;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 2px 9px 12px 24px rgba(0, 0, 0, 0.303);

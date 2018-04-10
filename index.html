@@ -12,6 +12,7 @@
     <div class="score-board">
         <div class="score">SCORE:</div>
         <div class="points">0</div>
+        <div class="timer">TIME: <scope class="seconds">30</scope></div>
         <div class="hearts">
             <i class="fas fa-heart" id="heartOne"></i>
             <i class="fas fa-heart" id="heartTwo"></i>
@@ -19,6 +20,9 @@
         </div>
         
     </div>
+    <div class="keys">
+        UP - move up, DOWN - move down, LEFT - move left, RIGHT - move right | M - mute
+</div>
     <div class="music">
         <i class="speaker fas fa-volume-up" onclick="musicOn()"></i>
 </div>
@@ -26,7 +30,7 @@
         <!-- Modal content -->
         <div class="welcome-content">
                 <p>Welcome to<br> <em>Bug Dodger!</em></p>
-                <p>Use the arrow keys on you keyboard to cross to the other side of the stone path as many times as you can, without colliding with the bugs.<br><br>You got two minutes!</p>
+                <p>Use the arrow keys on you keyboard to cross to the other side of the stone path as many times as you can, without colliding with the bugs.<br><br>You got 30 seconds!</p>
             <div class="start" onclick="hideWelcome()">
                 Press ENTER to Start
             </div>
@@ -36,7 +40,7 @@
     <div class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-                <p>You earned&nbsp;<em class="total"> </em>&nbsp;points.</p>
+                <p class="end-message">You earned&nbsp;<em class="total"> </em>&nbsp;points.</p>
                 <img class="boyImg" src='images/char-boy.png'>
                 <p>Try again!</p>
             <div class="restart" onclick="restart()">
