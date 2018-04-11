@@ -35,25 +35,6 @@ class Player {
     }
     // Manipulate and move the player on canvas area
     update() {
-        const mario = document.querySelector(".mario");
-        //set up if conditions to make sure player does not go out of the game tiles and play appropriate sounds and score update when reached to other side of path and flash green
-        if (this.x < 0) {
-            this.x = 0;
-        } else if (this.x > 6 * 101) {
-            this.x = 6 * 101;
-        } else if (this.y > 5 * 83) {
-            this.y = 5 * 83;
-        } else if (this.y == 0) {
-            this.y = 5 * 83;
-            points.scoreUp();
-            mario.currentTime = 0;
-            mario.play();
-            document.body.classList.add("green-flash");
-            setTimeout(function () {
-                document.body.classList.remove("green-flash");
-            }, 60);
-        }
-
         const punch = document.querySelector(".punch");
         //set up absolute distance for player and each bug, if value is less than set in the if statement, consider it a collision and update score plus flash red acordingly
         const distanceX1 = Math.abs((en1["x"]) - this.x);
@@ -109,8 +90,26 @@ class Player {
         } else if (arrow == 'down') {
             this.y += 83;
         }
-    }
 
+        const mario = document.querySelector(".mario");
+        //set up if conditions to make sure player does not go out of the game tiles and play appropriate sounds and score update when reached to other side of path and flash green
+        if (this.x < 0) {
+            this.x = 0;
+        } else if (this.x > 6 * 101) {
+            this.x = 6 * 101;
+        } else if (this.y > 5 * 83) {
+            this.y = 5 * 83;
+        } else if (this.y == 0) {
+            this.y = 5 * 83;
+            points.scoreUp();
+            mario.currentTime = 0;
+            mario.play();
+            document.body.classList.add("green-flash");
+            setTimeout(function () {
+                document.body.classList.remove("green-flash");
+            }, 60);
+        }
+    }
 }
 
 // Now instantiate your objects.

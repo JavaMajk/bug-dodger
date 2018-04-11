@@ -51,12 +51,26 @@ em {
 }
 
 .keys {
-    font-size: 12px;
+    font-size: 8px;
     border-radius: 6px;
+    padding: 12px;
     background: rgba(47, 79, 79, 0.571);
     position: fixed;
-    bottom: 35px;
+    bottom: 23px;
     left: 20px; 
+}
+
+.arrows {
+    font-size: 22px;
+}
+
+.divider {
+    font-size: 18px;
+    color: rgb(84, 84, 84);
+}
+
+.m-key {
+    font-size: 14px;
 }
 
 .music {
