@@ -239,7 +239,7 @@ const restart = () => {
     allowedKeys.set(40, 'down');
     audio.currentTime = 0;
     stopwatch.restart();
-    // stopwatch.start();
+    stopwatch.start();
     audio.play();
 }
 
@@ -251,6 +251,7 @@ class Stopwatch {
     }
 
     start() {
+        clearInterval(this.interval);
         this.interval = setInterval(() => {
             this.seconds -= 1;
             this.time.textContent = `${this.seconds}`;
