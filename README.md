@@ -4,7 +4,7 @@ This old school style game has been created as a part of [Udacity Web Developmen
 ### Game Instructions
 To play the game, use your arrow keys for moving the player across the tiles. Your goal is to cross to the other side of the path without colliding with the *bugs* as many times as possible within thirty seconds. 
 More game functionalities and levels will be added as the project develops.
-### Preview/ Play Game --> https://javamajk.github.io/bug-dodger/
+### Preview / Play Game --> https://javamajk.github.io/bug-dodger/
 
 # Credits & Resources
 ##### Listed in no particular order:
