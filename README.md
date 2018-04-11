@@ -17,8 +17,8 @@ More game functionalities and levels will be added as the project develops.
 * [Soundtrack](https://freesound.org/people/joshuaempyre/sounds/251461/)
 
 # To-Do List
-- [] Add more levels and functionalities
-- [] Write my own soundtrack
-- [] Add cross device functionality
-- [] Add scorekeeping and usernames for top scores
+- [ ] Add more levels and functionalities
+- [ ] Write my own soundtrack
+- [ ] Add cross device functionality
+- [ ] Add scorekeeping and usernames for top scores
 
