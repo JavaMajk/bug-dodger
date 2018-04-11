@@ -1,10 +1,13 @@
 # BUG DODGER
 This old school style game has been created as a part of [Udacity Web Development Nanodegree](https://in.udacity.com/google-india-scholarships) program in partnership with [Google (Grow with Google)](https://grow.google/). Below you can find more information.
 
-### Game Instructions
+# Game Instructions
 To play the game, use your arrow keys for moving the player across the tiles. Your goal is to cross to the other side of the path without colliding with the *bugs* as many times as possible within thirty seconds. 
 More game functionalities and levels will be added as the project develops.
-### Preview / Play Game --> https://javamajk.github.io/bug-dodger/
+## Loading
+To laod game, download resource files and open up the index.html in your preferred browser. 
+## Preview / Play Game
+ [Click to Play Online](https://javamajk.github.io/bug-dodger/)
 
 # Credits & Resources
 ##### Listed in no particular order:

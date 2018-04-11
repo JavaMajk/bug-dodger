@@ -4,7 +4,6 @@ body {
     font-family: 'Press Start 2P', cursive;
     color: #dadad0;
     transition: all 0.39s;
-    visibility: show;
 }
 
 em {
@@ -26,7 +25,7 @@ em {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    transform: all 1s;
+    transition: all 1s;
     }
 
 .score, .points {
