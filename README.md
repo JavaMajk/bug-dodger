@@ -24,4 +24,5 @@ To laod game, download resource files and open up the index.html in your preferr
 - [ ] Write my own soundtrack
 - [ ] Add cross device functionality
 - [ ] Add scorekeeping and usernames for top scores
+- [ ] Add effects to timer to make counting more dramatic as time runs out
 
