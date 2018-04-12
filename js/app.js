@@ -255,7 +255,8 @@ class Stopwatch {
             this.seconds -= 1;
             this.time.textContent = `${this.seconds}`;
             if (this.seconds <= 0) {
-                // this.seconds = 0;
+                player.y = 5 * 83;
+                player.x = 3 * 101;
                 clearInterval(this.interval);
                 finito();
             }
