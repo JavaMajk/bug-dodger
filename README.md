@@ -17,7 +17,6 @@ To laod game, download resource files and open up the index.html in your preferr
 * [Audio Mute in JS](https://stackoverflow.com/questions/13810085/html5-audio-display-only-play-pause-and-mute-buttons)
 * [Audio Play/Pause in JS](https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
 * [Prohibit numbers below 0 in JS](https://stackoverflow.com/questions/4924842/javascript-math-object-methods-negatives-to-zero)
-* [Soundtrack](https://freesound.org/people/joshuaempyre/sounds/251461/)
 
 # To-Do List
 - [ ] Add more levels and functionalities
